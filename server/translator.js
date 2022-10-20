@@ -63,5 +63,5 @@ app.get("/translators", (req,res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log(`Listening at http://localhost:3333`)
+    console.log(`Listening at http://localhost:${process.env.PORT || 3000}`)
 })
