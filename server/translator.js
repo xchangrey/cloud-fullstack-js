@@ -62,6 +62,6 @@ app.get("/translators", (req,res) => {
   getLanguages(res);
 });
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Listening at http://localhost:3333`)
 })
